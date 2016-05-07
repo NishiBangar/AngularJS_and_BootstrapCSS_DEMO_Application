@@ -4,9 +4,77 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title></title>
+		<title>Main Home Page</title>
+		<style>
+			.full-width-div{
+				position:absolute;
+				width: 100%;
+				left: 0;	
+			}
+			 .carousel-caption{
+			  /*use the translateY function of the CSS property transform to vertically align elements. */
+				top: 60%;
+				transform: translateY(-60%);
+				bottom: initial;
+			} 
+			
+			.item{
+				-webkit-transform-style: preserve-3d;
+				-moz-transform-style: preserve-3d;
+					transform-style: preserve-3d;
+			}
+		</style>
 	</head>
 	<body>
-		<h2><center>Main Home Page (DeepLinked Page) of the BOOTANG Application</center></h2>
+		<div class="container-fluid " style="background-color:#66696a;"	>
+			<div id="home-page-carousel" class="carousel slide" data-ride="carousel" style="width: 1200px; margin: 0 auto"  >
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#home-page-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#home-page-carousel" data-slide-to="1"></li>
+					<li data-target="#home-page-carousel" data-slide-to="2"></li>
+				</ol>
+				
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox" style="height:70%;">
+					<div class="item active">
+						<img src="images/amazing-lake-scenery-widescreen-full-hwallpaper-free-backgrounpictures-download-free-wallpapers-stock-images-best-1920x1200.jpg"
+							 alt="">
+						<div class="carousel-caption ">
+						  <!-- Caption -->
+						  <h1>First Slide</h1>
+						  <p><h3>First slide contents</h3></p>
+						</div>
+					</div>
+					<div class="item ">
+						<img src="images/beautiful-landscape-scenery-widescreen-hd-background-wallpaper-pictures-free-download-.jpg"
+							 alt="">
+						<div class="carousel-caption ">
+						  <!-- Caption -->
+						  <h1>Second Slide</h1>
+						  <p><h3>Second Slide contents</h3></p>
+						</div>
+					</div>
+					<div class="item ">
+						<img src="images/scenary.jpg" alt="">
+						<div class="carousel-caption">
+						  <!-- Caption -->
+						  <h1>Third Slide</h1>
+						  <p><h3>Third slide contents</h3></p>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Controls -->
+				<a class="left carousel-control" href="#home-page-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#home-page-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>			
+			</div>
+		</div>
 	</body>
 </html>
