@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title></title>
+<title>Error Page</title>
 </head>
 <body>
-	<h2><center>Secondary Page of the BOOTANG Application</center></h2>
+		<center><h1>Error ---Page Not Found----</h1></center>
 </body>
 </html>

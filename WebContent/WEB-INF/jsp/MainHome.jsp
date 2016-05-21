@@ -16,39 +16,67 @@
 
 		<!-- Font Awesome -->
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-		<!-- AngularJS CDN -->	
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+	
+		<!-- AngularJS 1.5.5 CDN -->	
+			<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>  
 		    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-resource.js"></script>
 		    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.js"></script>
-		    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script>
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script> -->
   		
+  		<!-- AngularJS 1.5.5 Local Installation -->
+  			<script type="text/javascript" src="js/angular.min.js"></script>
+  			<script type="text/javascript" src="js/angular-resource.js"></script>
+  			<script type="text/javascript" src="js/angular-route.js"></script>
+  			<script type="text/javascript" src="js/angular-animate.js"></script>
+  			
+  			
   		<!-- JavaScript files -->
-  			<script type="text/javascript" src="appRouting.js"></script>	
+  			<script type="text/javascript" src="appRouting.js"></script>
+  			
+  		<!-- Initializing Tooltip  -->	
+  			<script>
+				$(document).ready(function(){
+				    $('[data-toggle="tooltip"]').tooltip();
+				});
+			</script>
+  			<style>
+  				#deepLinkedView{
+  					width:100%; 
+  					margin-top:30px;
+  				}
+  			</style>	
+  			
   		<title>BootAngular</title>
 	</head>
-	<body ng-app="bootangApp">
+	<body ng-app="bootangApp">px
 		<div ng-controller="MainHomeCtrl">
-			<div >
-				
 			  <!-- Navbar -->
-			  	<nav class="navbar navbar-inverse navbar-fixed-top">
+			  	<nav class="navbar navbar-inverse navbar-fixed-top"  >
 			  		<div class="container-fluid">
 			  			<!-- Brand and Toggle get grouped for better mobile display -->
 			  			<div class="navbar-header">
-			  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bootang-demo-navbar-collapse" aria-expanded="false">
+			  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
 			  					<span class="sr-only">Toggle Navigation</span>
 			  					<span class="icon-bar"></span>
 			  					<span class="icon-bar"></span>
 			  					<span class="icon-bar"></span>
 			  				</button>
-			  				<a class="navbar-brand" href="" style="color:white;font-weight:900; ">BootAng Demo</a>
+			  				<a class="navbar-brand" href="#" style="color:white;font-weight:900; ">BootAng Demo</a>
 			  			</div>
 			  			
 			  			<!-- Collect the nav links ,forms and other content for toggling -->
 			  			<div class="collapse navbar-collapse" id="bootang-demo-navbar-collapse">
 			  				<ul class="nav navbar-nav navbar-left ">
-			  					<li><a href="#"><span class="glyphicon glyphicon-home">&nbsp;Home</span></a>
-			  					<li><a href="#"><span class="glyphicon glyphicon-exclamation-sign">&nbsp;About</span></a>
+			  					<li><a  id="homePage" href="#/homepage" data-toggle="tooltip" data-placement="bottom" 
+			  							title="Click to view Home Page information">
+			  							<span class="glyphicon glyphicon-home">&nbsp;Home</span>
+			  						</a>
+			  					</li>
+			  					<li><a id="aboutPage" href="#/About" data-toggle="tooltip" data-placement="bottom"
+			  							title="Click to view Information about this Website">
+			  							<span class="glyphicon glyphicon-exclamation-sign">&nbsp;About</span>
+			  						</a>
+			  					</li>
 			  				</ul>
 			  			</div>
 			  		</div>
@@ -56,13 +84,9 @@
 			  <!-- ------ -->
 			  
 			  <!------ ng-view --------->
-				<div id="deepLinkedView" ng-view style="width:100%; margin-top:10px;">	
+				<div id="deepLinkedView" ng-view ">	
 				</div>
 			  <!-- ------------------- -->
-			
-			
-			
-			</div>
 		</div>
 	
 	</body>

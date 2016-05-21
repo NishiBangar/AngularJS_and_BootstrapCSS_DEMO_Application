@@ -10,8 +10,9 @@
 
 3) Imported project from GIT to eclipse
 4) Dynamic Web Project converted to "MAVEN" project
-5) 02-04-2016 - Angular Module created with the basic configuration block configured and tested.
-6) 04-04-2016 - 
-7) 07-04-2016 - Spring MVC- 3.2.17  Maven dependencies added and configured(spring-servlet.xml).
-			  - Navigation bar added to MainHome.
+5) 02-05-2016 - Angular Module created with the basic configuration block configured and tested.
+6) 04-05-2016 - 
+7) 07-05-2016 - Spring MVC- 3.2.17  Maven dependencies added and configured(spring-servlet.xml).
+			  - Navigation bar added to MainHome. 
 			  - Carousel component added to MainHomePage.	
+8) 21-05-2016 - Implemented Tool Tips for the Navigation tabs
