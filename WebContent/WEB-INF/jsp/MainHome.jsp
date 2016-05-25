@@ -33,12 +33,7 @@
   		<!-- JavaScript files -->
   			<script type="text/javascript" src="appRouting.js"></script>
   			
-  		<!-- Initializing Tooltip  -->	
-  			<script>
-				$(document).ready(function(){
-				    $('[data-toggle="tooltip"]').tooltip();
-				});
-			</script>
+  		
   			<style>
   				#deepLinkedView{
   					width:100%; 

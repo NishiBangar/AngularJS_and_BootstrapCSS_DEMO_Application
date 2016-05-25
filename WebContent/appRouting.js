@@ -17,11 +17,16 @@ bootangApp.config(function($routeProvider){
 
 
 //**********************Main Home Controller*************************
-bootangApp.controller("MainHomeCtrl",['$rootScope','$scope','$resource','$timeout','$location',
-                                      function($rootScope,$scope,$resource,$timeout,$location){
+bootangApp.controller("MainHomeCtrl",['$rootScope','$scope','$resource','$timeout','$location','$document',
+                                      function($rootScope,$scope,$resource,$timeout,$location,$document){
 	
 	console.log("-------Inside Main Home Controller-------");
 //	$location.path("/Home");
+	//Initializing Tool tip on Dom Ready
+	$document.ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();
+		
+	});
 }]);
 //*******************************************************************
 
