@@ -43,7 +43,7 @@
   			
   		<title>BootAngular</title>
 	</head>
-	<body ng-app="bootangApp">px
+	<body ng-app="bootangApp">
 		<div ng-controller="MainHomeCtrl">
 			  <!-- Navbar -->
 			  	<nav class="navbar navbar-inverse navbar-fixed-top"  >
