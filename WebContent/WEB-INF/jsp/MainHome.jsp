@@ -24,20 +24,20 @@
 		    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.js"></script> -->
   		
   		<!-- AngularJS 1.5.5 Local Installation -->
-  			<script type="text/javascript" src="js/angular.min.js"></script>
-  			<script type="text/javascript" src="js/angular-resource.js"></script>
-  			<script type="text/javascript" src="js/angular-route.js"></script>
-  			<script type="text/javascript" src="js/angular-animate.js"></script>
-  			
+  			<script type="text/javascript" src="lib/angular.min.js"></script>
+  			<script type="text/javascript" src="lib/angular-resource.js"></script>
+  			<script type="text/javascript" src="lib/angular-route.js"></script>
+  			<script type="text/javascript" src="lib/angular-animate.js"></script>
+  			<script type="text/javascript" src="lib/angular-mocks.js"></script>			
   			
   		<!-- JavaScript files -->
-  			<script type="text/javascript" src="appRouting.js"></script>
+  			<script type="text/javascript" src="js/appRouting.js"></script>
   			
   		
   			<style>
   				#deepLinkedView{
   					width:100%; 
-  					margin-top:30px;
+  					margin-top:50px;
   				}
   			</style>	
   			
@@ -67,7 +67,7 @@
 			  							<span class="glyphicon glyphicon-home">&nbsp;Home</span>
 			  						</a>
 			  					</li>
-			  					<li><a id="aboutPage" href="#/About" data-toggle="tooltip" data-placement="bottom"
+			  					<li><a  id="aboutPage" href="#/About" data-toggle="tooltip" data-placement="bottom"
 			  							title="Click to view Information about this Website">
 			  							<span class="glyphicon glyphicon-exclamation-sign">&nbsp;About</span>
 			  						</a>

@@ -16,3 +16,8 @@
 			  - Navigation bar added to MainHome. 
 			  - Carousel component added to MainHomePage.	
 8) 21-05-2016 - Implemented Tool Tips for the Navigation tabs
+9) 30-05-2016 - Initial setup of "TDD" approach complete
+					-Karma instalation
+					-Jasmine installation
+10) 01-06-2016 - Complete configuration of "Karma--karma.conf.js" complete.
+					-Example tests working .
