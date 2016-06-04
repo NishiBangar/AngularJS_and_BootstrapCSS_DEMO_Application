@@ -8,10 +8,8 @@
 
 	<bean id="JdbcDataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
-		<property name="driverClassName"
-				  value="com.mysql.jdbc.Driver" />
-		<property name="url"
-				  value="" />
+		<property name="driverClassName"  value="com.mysql.jdbc.Driver" />
+		<property name="url" value="" />
 		<property name="username" value="" />
 		<property name="password" value="" />
 		

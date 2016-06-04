@@ -16,6 +16,15 @@ bootangApp.config(function($routeProvider){
 });
 
 
+// Test Service
+bootangApp.service('CategoryService',function(){
+	return{
+		getCategories:function(){
+			return {1:'Beverages',2:'Condiments'};
+		}
+	}
+});
+
 //**********************Main Home Controller*************************
 bootangApp.controller("MainHomeCtrl",['$rootScope','$scope','$resource','$timeout','$location','$document',
                                       function($rootScope,$scope,$resource,$timeout,$location,$document){

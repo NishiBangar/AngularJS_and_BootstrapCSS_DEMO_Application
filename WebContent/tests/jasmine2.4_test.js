@@ -21,3 +21,10 @@ describe("The 'toBe' matcher compared with ===",function(){
 		expect(false).not.toBe(	);
 	});
 });
+
+//Service Register
+describe("BootAng category service",function(){
+	it('should return the expected categories',function(){
+		
+	});
+});
