@@ -6,28 +6,57 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Main Home Page</title>
 		<style>
-			.full-width-div{
+			/* .full-width-div{
 				position:absolute;
 				width: 100%;
 				left: 0;	
-			}
-			 .carousel-caption{
-			  /*use the translateY function of the CSS property transform to vertically align elements. */
+			} */
+			
+			 /*use the translateY function of the CSS property transform to vertically align elements. */
+		/*  .carousel-caption{
+			 
 				top: 60%;
 				transform: translateY(-60%);
 				bottom: initial;
-			} 
-			
+			} */
+		
 			.item{
 				-webkit-transform-style: preserve-3d;
 				-moz-transform-style: preserve-3d;
 					transform-style: preserve-3d;
 			}
+			
+			/* .carousel{
+				 width: 1200px;
+				 
+			} */
+			
+				/*  .carousel-inner{
+				    width: 1200px;
+						max-height:70% !important;
+				}  */
+			
+		    /* .carousel-inner > .item > img,
+			.carousel-inner > .item > a > img {
+				width : 1300px;
+			    height: 50% !important ;   // Set slide height here  
+			
+			}   */
+			
+			 /*    .carousel .item.left img{
+				     width: 100% !important;
+				     max-height: 50% !important;    // Set slide height here 
+				}    */
+				
+				/* #myCarousel.carousel.slide {
+					width: 100%; 
+					max-height: 200px !important; 
+				}  */
 		</style>
 	</head>
 	<body>
 		<div class="container-fluid " style="background-color:#66696a;"	>
-			<div id="home-page-carousel" class="carousel slide" data-ride="carousel" style="width: 1200px; margin: 0 auto"  >
+			<div id="home-page-carousel" class="carousel slide" data-ride="carousel" >
 				<!-- Indicators -->
 				<ol class="carousel-indicators">
 					<li data-target="#home-page-carousel" data-slide-to="0" class="active"></li>
@@ -36,7 +65,7 @@
 				</ol>
 				
 				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox" style="height:70%;">
+				<div class="carousel-inner" role="listbox" >
 					<div class="item active">
 						<img src="images/amazing-lake-scenery-widescreen-full-hwallpaper-free-backgrounpictures-download-free-wallpapers-stock-images-best-1920x1200.jpg"
 							 alt="">
